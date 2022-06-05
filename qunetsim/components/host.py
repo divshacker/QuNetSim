@@ -1215,9 +1215,6 @@ class Host(object):
 
     def get_data_qubits(self, host_id, remove_from_storage=False):
         """
-        Return the dictionary of data qubits stored, just for the information regarding which qubits are stored.
-        Optional to remove the qubits from storage like *get_qubit* does with *remove_from_storage* field.
-
         Args:
             host_id (str): The host id from which the data qubit have been received.
             remove_from_storage (bool): Get and remove from storage.
@@ -1462,9 +1459,6 @@ class Host(object):
 
     def get_data_qubit(self, host_id, q_id=None, wait=0):
         """
-        Gets the data qubit received from another host in the network. If qubit ID is specified,
-        qubit with that ID is returned, else, the last qubit received is returned.
-
         Args:
             host_id (str): The ID of the host that data qubit to be returned is received from.
             q_id (str): The qubit ID of the data qubit to get.
